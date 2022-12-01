@@ -2,7 +2,7 @@ import path from 'path'
 import express from 'express';
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5004
 
 app.get('/abc', (req, res) => {
     console.log("request ip: ", req.ip);
@@ -21,7 +21,7 @@ app.get('/gettime', (req, res) => {
 
 const __dirname = path.resolve();
 app.use('/', express.static(path.join(__dirname, './website/build')));
-app.get('*', express.static(path.join(__dirname, './website/build')));
+app.use('*', express.static(path.join(__dirname, './website/build')));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
