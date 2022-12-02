@@ -1,0 +1,89 @@
+body {
+    background-image: url(https://source.unsplash.com/1600x1000/?weather);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 45px;
+    color: white;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.weatherContainer {
+    width: 400px;
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background: rgba(6, 6, 6, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.renderWeather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: white;
+    /* border: 1px solid black; */
+
+}
+
+.mainContainer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.cityName {
+    font-size: 35px;
+    /* font-weight: 600; */
+}
+
+input[type=text] {
+    width: 250px;
+    height: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+    /* color: white; */
+    /* background-color: darkblue; */
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    width: 301px;
+}
+
+.temp>div>span {
+    font-size: 20px;
+}
+
+.hp>div>span {
+    font-size: 20px;
+}
+
+.temp>div {
+    /* line-height: 40px; */
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.hp>div {
+    margin: 10px;
+    margin-left: 20px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
